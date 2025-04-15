@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario medico</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha de Cadastro para Exame Médico</h1>
+        <form id="registrationForm">
+         
+          <div class="form-section">
+            <h2>Dados Pessoais</h2>
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="nascimento">Data de nascimento</label>
+              <input type="date" id="nascimento" name="nascimento" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="genero">Gênero</label>
+              <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outro</option>
+              </select>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="raca">Raça</label>
+              <input type="text" id="raca" name="raca" required>
+              <div class="error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="nacionalidade">Nacionalidade</label>
+              <input type="text" id="nacionalidade" name="nacionalidade" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="cpf" required>
+              <div class="error"></div>
+            </div>
+          </div>
+    
+          
+          <div class="form-section">
+            <h2>Contato</h2>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="email_trabalho">Email de trabalho</label>
+              <input type="email" id="email_trabalho" name="email_trabalho" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="email_trabalho_ce">Email de trabalho do CE</label>
+              <input type="email" id="email_trabalho_ce" name="email_trabalho_ce" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="text" id="telefone" name="telefone" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="telefone_ce">Telefone de CE</label>
+              <input type="text" id="telefone_ce" name="telefone_ce" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="email_ce">Email de CE</label>
+              <input type="email" id="email_ce" name="email_ce" required>
+              <div class="error"></div>
+            </div>
+          </div>
+    
+       
+          <div class="form-section">
+            <h2>Endereço</h2>
+            <div class="form-group full">
+              <label for="endereco">Rua</label>
+              <input type="text" id="endereco" name="endereco" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="numero">Número</label>
+              <input type="number" id="numero" name="numero" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="bairro">Bairro</label>
+              <input type="text" id="bairro" name="bairro" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado</label>
+              <input type="text" id="estado" name="estado" required>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" required>
+              <div class="error"></div>
+            </div>
+          </div>
+    
+        
+          <div class="form-section">
+            <h2>Informações Médicas</h2>
+            <div class="form-group">
+              <label for="alergias">Alergias</label>
+              <input type="text" id="alergias" name="alergias">
+              <div class="error"></div>
+            </div>
+            <div class="form-group full">
+              <label for="historico_doencas">Histórico de doenças</label>
+              <textarea id="historico_doencas" name="historico_doencas" rows="3"></textarea>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="cardiaco">Possui doença cardíaca?</label>
+              <select id="cardiaco" name="cardiaco" required>
+                <option value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="respiratorio">Problemas respiratórios?</label>
+              <select id="respiratorio" name="respiratorio" required>
+                <option value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+              <div class="error"></div>
+            </div>
+          </div>
+    
+        
+          <div class="form-section">
+            <h2>Histórico Familiar</h2>
+            <div class="form-group full">
+              <label for="familiares">Doenças conhecidas na família</label>
+              <textarea id="familiares" name="familiares" rows="3"></textarea>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="historico_cancer_familia">Histórico de câncer na família</label>
+              <select id="historico_cancer_familia" name="historico_cancer_familia" required>
+                <option value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="historico_doencas_pulmonares">Histórico de doenças pulmonares</label>
+              <select id="historico_doencas_pulmonares" name="historico_doencas_pulmonares" required>
+                <option value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+              <div class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="fumantes">Há fumantes na família?</label>
+              <select id="fumantes" name="fumantes" required>
+                <option value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+              <div class="error"></div>
+            </div>
+          </div>
+    
+        
+          <div class="form-section">
+            <h2>Informações Adicionais</h2>
+            <div class="form-group full">
+              <label for="observacoes">Observações</label>
+              <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+              <div class="error"></div>
+            </div>
+          </div>
+    
+          <button type="submit">Enviar Cadastro</button>
+        </form>
+      </div>
+    
+  
+</body>
+</html>
